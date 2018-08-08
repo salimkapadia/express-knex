@@ -1,0 +1,34 @@
+{
+  "name": "express-knex",
+  "version": "0.0.1",
+  "description": "Node.js + Express + Knex + BookshelfJS skeleton application",
+  "author": "Salim Kapadia",
+  "license": "ISC",
+  "keywords": [
+    "REST",
+    "API",
+    "Node.js"
+  ],
+  "scripts": {
+    "start": "export NODE_CONFIG_DIR=./src/server/config; export NODE_ENV=production; pm2 start app.js --name \"prod-some-cool-api\""
+  },
+  "dependencies": {
+    "bookshelf": "^0.13.3",
+    "config": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "knex": "^0.13.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.0",
+    "mysql": "^2.16.0",
+    "pm2": "^3.0.3",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

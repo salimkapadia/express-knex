@@ -1,0 +1,22 @@
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+.tmp/
+dist/
+
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# IDE files
+.idea
+*.swp
+
+# https://github.com/github/gitignore/blob/master/Node.gitignore
+# Logs
+logs
+*.log
+
+*.env
