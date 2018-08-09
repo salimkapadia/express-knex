@@ -15,10 +15,8 @@ let state = require('../database/models/state');
  * GET /book route to retrieve all the books.
  */
 async function getAlcoholTypes(req, res, next) {
-  console.log('inside of get alocoholtypes');
   //Query the DB, send all the types to the caller
   let results = await alcohol.fetchAll();
-  console.log('results');
   //send results back to the client
   res.json(results);
 }

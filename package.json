@@ -10,7 +10,8 @@
     "Node.js"
   ],
   "scripts": {
-    "start": "export NODE_CONFIG_DIR=./src/server/config; export NODE_ENV=production; pm2 start app.js --name \"prod-some-cool-api\""
+    "start": "export NODE_CONFIG_DIR=./src/server/config; export NODE_ENV=production; pm2 start app.js --name \"prod-some-cool-api\"",
+    "test": "./node_modules/mocha/bin/_mocha"
   },
   "dependencies": {
     "bookshelf": "^0.13.3",
@@ -29,6 +30,22 @@
     "winston": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.3"
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "faker": "^3.1.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "knex": "^0.11.10",
+    "mocha": "^3.0.2",
+    "mocha-jscs": "^5.0.1",
+    "mocha-jshint": "^2.3.1",
+    "nodemon": "^1.18.3",
+    "pg": "^6.1.0",
+    "run-sequence": "^1.2.2",
+    "tiny-lr": "^0.2.1"
   }
 }

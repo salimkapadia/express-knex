@@ -1,7 +1,7 @@
 module.exports = {
   database: {
     connection:{
-      database: 'local_test'
+      database: 'expess_knex_test'
     }
   }
 };
